@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Área de Convivencia - UTCJ</title>
+    <style>
+        /* Variables de color basadas en la presentación (tonos sobrios y profesionales) */
+        :root {
+            --primary-color: #4B5320; /* Verde olivo oscuro */
+            --secondary-color: #6b705c; /* Verde militar claro */
+            --background-light: #f4f4f4;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --border-color: #dddddd;
+        }
+
+        /* Reseteo básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Secciones */
+        section {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Cuadrículas para dividir información */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tablas de dimensiones y presupuesto */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Lista de enfoque sustentable */
+        .eco-list {
+            list-style-type: none;
+        }
+
+        .eco-list li {
+            background: #e9ecef;
+            margin-bottom: 0.5rem;
+            padding: 10px 15px;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Proyecto: Área de Convivencia Escolar al Aire Libre</h1>
+        <p>Universidad Tecnológica de Cd. Juárez (Edificio Q)</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <div class="grid-2">
+                <div>
+                    <h2>Problemática</h2>
+                    <p>Actualmente existe una escasez de áreas destinadas al descanso, desayuno y convivencia de los estudiantes dentro del campus universitario.</p>
+                </div>
+                <div>
+                    <h2>Justificación y Objetivo</h2>
+                    <p>El proyecto busca mejorar la calidad de los espacios universitarios, promoviendo la convivencia, el bienestar y el aprovechamiento de áreas disponibles. Se propone transformar un terreno actualmente inutilizado en un área de convivencia sustentable, funcional y cómoda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Perfil del Proyecto</h2>
+            <p>Para solucionar la falta de espacios, se propone construir un <strong>Área de Convivencia Escolar al Aire Libre</strong> en el terreno frente al estacionamiento al lado del edificio Q. Este espacio estará diseñado para que los alumnos puedan descansar, convivir, realizar trabajos en equipo o disfrutar de un lugar agradable dentro de la universidad.</p>
+        </section>
+
+        <section>
+            <h2>Dimensiones del Diseño</h2>
+            <p>Aproximaciones de los elementos considerados en el proyecto:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Dimensiones Aproximadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Área total del proyecto</td>
+                        <td>48.00 m × 30.00 m (1,440 m² aprox.)</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa de picnic</td>
+                        <td>2.00 m × 1.80 m</td>
+                    </tr>
+                    <tr>
+                        <td>Área de cada comedor</td>
+                        <td>6.00 m de diámetro</td>
+                    </tr>
+                    <tr>
+                        <td>Velaria triangular</td>
+                        <td>5.00 m × 5.00 m × 5.00 m</td>
+                    </tr>
+                    <tr>
+                        <td>Senderos de concreto</td>
+                        <td>2.00 m de ancho</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Enfoque Sustentable y Materiales</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Elementos Ecológicos</h3>
+                    <ul class="eco-list">
+                        <li><strong>Jardín captador de lluvia:</strong> Áreas hundidas con plantas resistentes que aprovechan el agua pluvial.</li>
+                        <li><strong>Luminarias solares:</strong> Postes con panel solar integrado.</li>
+                        <li><strong>Estación de carga solar:</strong> Bancas con puertos USB alimentados por energía solar.</li>
+                        <li><strong>Estaciones de separación:</strong> Contenedores para papel, plástico, aluminio y basura general.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Paleta de Materiales</h3>
+                    <p>Se utilizará piedra decorativa (roja, amarilla, azul, blanca), concreto lavado, madera tratada y acero pintado. </p>
+                    <p><strong>Vegetación nativa:</strong> Se plantará mezquite, huizache y palo verde para garantizar bajo consumo de agua y adaptación al clima de la región.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Beneficios del Proyecto</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>En el rendimiento académico</h3>
+                    <p>Proporciona un lugar cómodo para alimentarse y despejarse, ayudando a recuperar energía para regresar a clases más animados, mejorando a largo plazo las calificaciones.</p>
+                </div>
+                <div>
+                    <h3>En la convivencia y comodidad</h3>
+                    <p>Funciona como punto de encuentro para entablar nuevas amistades. Además, cuenta con caminos de concreto liso accesibles para todos (incluyendo muletas o sillas de ruedas) y sombra indispensable para el clima extremo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Presupuesto Estimado</h2>
+            <p>Presupuesto aproximado de materiales (precios comerciales en Ciudad Juárez, Chihuahua, 2026). <em>*No incluye mano de obra, maquinaria ni permisos.</em></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Importe Total Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Materiales generales (Concreto, malla, grava, piedra)</td>
+                        <td>Se detalla en catálogo de conceptos</td>
+                    </tr>
+                    <tr>
+                        <td>Mobiliario (Mesas, velarias, luminarias, bancas solares)</td>
+                        <td>Se detalla en catálogo de conceptos</td>
+                    </tr>
+                    <tr>
+                        <td>Jardinería (Árboles, plantas, tierra, sistema de lluvia)</td>
+                        <td>Se detalla en catálogo de conceptos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Estimado de Materiales</strong></td>
+                        <td><strong>$490,050 MXN</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+</body>
+</html>
