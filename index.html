@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Área de Convivencia - UTCJ</title>
     <style>
-        /* Variables de color basadas en la presentación (tonos sobrios y profesionales) */
+        /* Variables de color */
         :root {
-            --primary-color: #4B5320; /* Verde olivo oscuro */
-            --secondary-color: #6b705c; /* Verde militar claro */
+            --primary-color: #4B5320; 
+            --secondary-color: #6b705c; 
             --background-light: #f4f4f4;
             --text-dark: #333333;
             --text-light: #ffffff;
@@ -77,17 +77,34 @@
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
         }
+        
+        h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
 
         p {
             margin-bottom: 1rem;
             text-align: justify;
         }
 
-        /* Cuadrículas para dividir información */
+        /* Estilos para las imágenes */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* Cuadrículas para dividir información e imágenes */
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
+            align-items: start;
         }
 
         @media (max-width: 768px) {
@@ -159,6 +176,7 @@
 
     <div class="container">
         
+        <!-- Problemática y Objetivo -->
         <section>
             <div class="grid-2">
                 <div>
@@ -172,14 +190,30 @@
             </div>
         </section>
 
+        <!-- Perfil del Proyecto -->
         <section>
             <h2>Perfil del Proyecto</h2>
             <p>Para solucionar la falta de espacios, se propone construir un <strong>Área de Convivencia Escolar al Aire Libre</strong> en el terreno frente al estacionamiento al lado del edificio Q. Este espacio estará diseñado para que los alumnos puedan descansar, convivir, realizar trabajos en equipo o disfrutar de un lugar agradable dentro de la universidad.</p>
+            
+            <div class="grid-2" style="margin-top: 2rem;">
+                <div>
+                    <h4>Antes del proyecto</h4>
+                    <img src="732747357_1006665828889352_4194820479017958119_n.jpg" alt="Vista del terreno antes de la construcción">
+                </div>
+                <div>
+                    <h4>Después del proyecto</h4>
+                    <img src="736032632_1741487240499512_716142424146462556_n.jpg" alt="Renders del proyecto finalizado">
+                </div>
+            </div>
         </section>
 
+        <!-- Dimensiones (Tabla e Imagen) -->
         <section>
             <h2>Dimensiones del Diseño</h2>
-            <p>Aproximaciones de los elementos considerados en el proyecto:</p>
+            <p>Aproximaciones de los elementos considerados en el diseño del proyecto:</p>
+            
+            <img src="732961516_2022182548382287_3210935796115112574_n.jpg" alt="Detalles de diseño: velaria, mesa, iluminación, banca y jardín">
+            
             <table>
                 <thead>
                     <tr>
@@ -212,6 +246,7 @@
             </table>
         </section>
 
+        <!-- Sustentabilidad y Materiales -->
         <section>
             <h2>Enfoque Sustentable y Materiales</h2>
             <div class="grid-2">
@@ -226,12 +261,14 @@
                 </div>
                 <div>
                     <h3>Paleta de Materiales</h3>
-                    <p>Se utilizará piedra decorativa (roja, amarilla, azul, blanca), concreto lavado, madera tratada y acero pintado. </p>
+                    <img src="736454993_1722522791957025_2199524297365878440_n.jpg" alt="Paleta de materiales y colores a utilizar">
+                    <p>Se utilizará piedra decorativa (roja, amarilla, azul, blanca), concreto lavado, madera tratada y acero pintado.</p>
                     <p><strong>Vegetación nativa:</strong> Se plantará mezquite, huizache y palo verde para garantizar bajo consumo de agua y adaptación al clima de la región.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Beneficios -->
         <section>
             <h2>Beneficios del Proyecto</h2>
             <div class="grid-2">
@@ -246,6 +283,7 @@
             </div>
         </section>
 
+        <!-- Presupuesto -->
         <section>
             <h2>Presupuesto Estimado</h2>
             <p>Presupuesto aproximado de materiales (precios comerciales en Ciudad Juárez, Chihuahua, 2026). <em>*No incluye mano de obra, maquinaria ni permisos.</em></p>
@@ -278,6 +316,10 @@
         </section>
 
     </div>
+
+    <footer>
+        <p>Documento de Proyecto Informativo - Diseño Web Estructural</p>
+    </footer>
 
 </body>
 </html>
